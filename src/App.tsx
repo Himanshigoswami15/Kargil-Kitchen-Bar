@@ -46,7 +46,7 @@ export default function App() {
               <img 
                 src="https://ik.imagekit.io/j1fgksdwx/ChatGPT%20Image%20Feb%2016,%202026,%2006_12_08%20PM.png?updatedAt=1771245805784" 
                 alt="Kargil Kitchen Logo" 
-                className="w-full h-full object-contain filter grayscale brightness-90 sepia hue-rotate-[65deg] saturate-[2.5] contrast-125 drop-shadow-[0_0_25px_rgba(96,108,56,0.4)]"
+                className="w-full h-full object-contain mix-blend-multiply filter grayscale brightness-90 sepia hue-rotate-[65deg] saturate-[2.5] contrast-125 drop-shadow-[0_0_25px_rgba(96,108,56,0.4)]"
                 referrerPolicy="no-referrer"
               />
             </motion.div>
@@ -190,6 +190,17 @@ export default function App() {
                 <p className="font-sans text-[9px] text-stone-700 uppercase tracking-[0.4em]">
                   kargilkitchenrestro
                 </p>
+              </div>
+              <div className="pt-4 flex flex-col items-center gap-2 opacity-40 hover:opacity-80 transition-opacity duration-300">
+                <p className="font-sans text-[8px] text-stone-700 uppercase tracking-[0.3em]">
+                  Design by
+                </p>
+                <div className="flex items-center gap-1.5">
+                  <Instagram className="w-2.5 h-2.5 text-stone-500" />
+                  <p className="font-sans text-[8px] text-stone-700 uppercase tracking-[0.2em]">
+                    qreativemenus
+                  </p>
+                </div>
               </div>
             </div>
           </div>
