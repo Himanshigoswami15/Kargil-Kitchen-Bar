@@ -11,7 +11,7 @@ export const RESTAURANT_MENU: MenuSection[] = [
         type: "Strong Lager",
         tag: "Popular",
         description: "A bold, full-bodied lager with a crisp finish.",
-        singlePrice: "280",
+        singlePrice: "250",
         towerPrice: "720"
       },
       {
@@ -21,7 +21,7 @@ export const RESTAURANT_MENU: MenuSection[] = [
         type: "Malt Lager",
         tag: "Smooth",
         description: "Rich malt character with a balanced hop bitterness.",
-        singlePrice: "320",
+        singlePrice: "350",
         towerPrice: "930"
       },
       {
