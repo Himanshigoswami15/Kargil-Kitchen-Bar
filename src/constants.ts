@@ -103,5 +103,28 @@ export const RESTAURANT_MENU: MenuSection[] = [
         singlePrice: "300"
       }
     ]
+  },
+  {
+    title: "Cigarette",
+    items: [
+      {
+        id: "c1",
+        name: "Small Cigarette",
+        category: "Tobacco",
+        type: "Small",
+        tag: "Classic",
+        description: "Classic small cigarette.",
+        singlePrice: "20"
+      },
+      {
+        id: "c2",
+        name: "Large Cigarette",
+        category: "Tobacco",
+        type: "Large",
+        tag: "Premium",
+        description: "Premium large cigarette.",
+        singlePrice: "40"
+      }
+    ]
   }
 ];

@@ -84,6 +84,8 @@ export default function App() {
                   <div className="w-14 h-14 rounded-full bg-gold-leaf/[0.03] border border-gold-leaf/10 flex items-center justify-center">
                     {section.title === "Beer Selection" ? (
                       <Beer className="w-6 h-6 text-gold-leaf/70" />
+                    ) : section.title === "Cigarette" ? (
+                      <Flame className="w-6 h-6 text-gold-leaf/70" />
                     ) : (
                       <Utensils className="w-6 h-6 text-gold-leaf/70" />
                     )}
