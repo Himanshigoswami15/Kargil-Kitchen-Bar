@@ -59,42 +59,67 @@ export default function App() {
             </p>
             <div className="h-[0.5px] w-8 bg-gradient-to-r from-transparent via-gold-leaf/30 to-transparent" />
           </div>
+
+          {/* Quick Navigation */}
+          <motion.nav 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="mt-12 flex flex-wrap justify-center gap-4 md:gap-6"
+          >
+            {RESTAURANT_MENU.map((section) => (
+              <button
+                key={section.title}
+                onClick={() => {
+                  const element = document.getElementById(section.title.replace(/\s+/g, '-').toLowerCase());
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="group relative px-6 py-3 border border-gold-leaf/20 rounded-full hover:border-gold-leaf/50 hover:bg-gold-leaf/5 transition-all duration-500 overflow-hidden"
+              >
+                {/* Subtle Shimmer Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold-leaf/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                
+                <span className="relative font-serif text-gold-leaf/70 group-hover:text-gold-leaf transition-colors duration-300 text-[10px] md:text-xs uppercase tracking-[0.3em] whitespace-nowrap">
+                  {section.title}
+                </span>
+              </button>
+            ))}
+          </motion.nav>
         </motion.div>
       </header>
 
       {/* Main Menu Content */}
       <main className="max-w-7xl mx-auto px-6 pb-32 relative z-10">
-        <div className="flex flex-col gap-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-16 items-start">
           {RESTAURANT_MENU.map((section, sectionIdx) => (
-            <div key={section.title} className="space-y-8">
+            <div 
+              key={section.title} 
+              id={section.title.replace(/\s+/g, '-').toLowerCase()}
+              className="space-y-12 scroll-mt-24"
+            >
               {/* Section Header */}
               <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col md:flex-row items-center justify-between gap-6 px-4"
+                className="flex flex-col items-center text-center gap-6 px-4"
               >
-                <div className="space-y-1 text-center md:text-left">
-                  <span className="font-mono text-[10px] text-gold-leaf/60 uppercase tracking-[0.4em]">Premium Selection</span>
-                  <h2 className="font-serif text-5xl md:text-6xl font-medium text-gold-leaf">
-                    {section.title}
-                  </h2>
+                <div className="w-16 h-16 rounded-full bg-gold-leaf/[0.03] border border-gold-leaf/10 flex items-center justify-center">
+                  {section.title === "Beer Selection" ? (
+                    <Beer className="w-8 h-8 text-gold-leaf/70" />
+                  ) : section.title === "Cigarette" ? (
+                    <Flame className="w-8 h-8 text-gold-leaf/70" />
+                  ) : (
+                    <Utensils className="w-8 h-8 text-gold-leaf/70" />
+                  )}
                 </div>
-                <div className="flex items-center gap-8">
-                  <div className="w-14 h-14 rounded-full bg-gold-leaf/[0.03] border border-gold-leaf/10 flex items-center justify-center">
-                    {section.title === "Beer Selection" ? (
-                      <Beer className="w-6 h-6 text-gold-leaf/70" />
-                    ) : section.title === "Cigarette" ? (
-                      <Flame className="w-6 h-6 text-gold-leaf/70" />
-                    ) : (
-                      <Utensils className="w-6 h-6 text-gold-leaf/70" />
-                    )}
-                  </div>
-                </div>
+                <h2 className="font-serif text-4xl md:text-5xl font-medium text-gold-leaf">
+                  {section.title}
+                </h2>
               </motion.div>
 
-              {/* Menu Items as Individual Cards - Responsive Grid */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12">
+              {/* Menu Items as Individual Cards - Single Column for Side-by-Side Sections */}
+              <div className="grid grid-cols-1 gap-8">
                 {section.items.map((item, itemIdx) => (
                   <motion.div
                     key={item.id}
