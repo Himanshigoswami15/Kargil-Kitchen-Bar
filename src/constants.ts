@@ -66,7 +66,7 @@ export const RESTAURANT_MENU: MenuSection[] = [
       },
       {
         id: "b7",
-        name: "Calsberg Elephant Strong",
+        name: "Carlsberg Elephant Strong",
         category: "Imported Heritage",
         type: "Extra Strong",
         tag: "Powerful",
