@@ -101,6 +101,105 @@ export const RESTAURANT_MENU: MenuSection[] = [
         tag: "Premium",
         description: "Best served with a slice of lime for that perfect beach vibe.",
         singlePrice: "300"
+      },
+      {
+        id: "b11",
+        name: "Energy Drink Hell",
+        category: "Beverage",
+        type: "Chilled",
+        tag: "Energizing",
+        description: "Classic energy drink to power up your spirits.",
+        singlePrice: "110"
+      },
+      {
+        id: "b12",
+        name: "Energy Drink Redbull",
+        category: "Beverage",
+        type: "Chilled",
+        tag: "Premium Energy",
+        description: "Vibrant and refreshing energy booster.",
+        singlePrice: "170"
+      },
+      {
+        id: "b13",
+        name: "Budweiser Magnum Can",
+        category: "Premium Can",
+        type: "Strong Lager",
+        tag: "Bold",
+        description: "Convenient can with the iconic strong flavor.",
+        singlePrice: "300"
+      },
+      {
+        id: "b14",
+        name: "Maxx Can",
+        category: "Premium Can",
+        type: "Extra Strong",
+        tag: "Intense",
+        description: "Maximum punch and flavor in a single chilled can.",
+        singlePrice: "300"
+      },
+      {
+        id: "b15",
+        name: "Kingfisher Can",
+        category: "Classic Can",
+        type: "Strong Lager",
+        tag: "Popular",
+        description: "Your favorite classic strong lager in a cold can.",
+        singlePrice: "220"
+      },
+      {
+        id: "b16",
+        name: "Tuborg Can",
+        category: "Premium Can",
+        type: "Strong Lager",
+        tag: "Crisp",
+        description: "Chilled strong Tuborg in a convenient draft can.",
+        singlePrice: "220"
+      },
+      {
+        id: "b17",
+        name: "Budweiser Lager",
+        category: "Global",
+        type: "American Lager",
+        tag: "King of Beers",
+        description: "Smooth, clean American lager brewed for perfection.",
+        singlePrice: "380"
+      },
+      {
+        id: "b18",
+        name: "Kingfisher Smooth",
+        category: "Classic",
+        type: "Smooth Lager",
+        tag: "Super Smooth",
+        description: "Refreshing, light-tasting lager with an ultra-smooth finish.",
+        singlePrice: "280"
+      },
+      {
+        id: "b19",
+        name: "Kingfisher Lager",
+        category: "Classic",
+        type: "Mild Lager",
+        tag: "Refreshing",
+        description: "Crisp original lager perfect for every celebration.",
+        singlePrice: "350"
+      },
+      {
+        id: "b20",
+        name: "Ultra Lager",
+        category: "Ultra",
+        type: "Premium Lager",
+        tag: "Light & Crisp",
+        description: "Sophisticated premium taste with low bitterness.",
+        singlePrice: "350"
+      },
+      {
+        id: "b21",
+        name: "Cold Drink Can",
+        category: "Soft Drink",
+        type: "Chilled",
+        tag: "Refreshing",
+        description: "Canned cold soft drinks served chilled to your liking.",
+        singlePrice: "75"
       }
     ]
   },
