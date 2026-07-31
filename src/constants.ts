@@ -200,6 +200,15 @@ export const RESTAURANT_MENU: MenuSection[] = [
         tag: "Refreshing",
         description: "Canned cold soft drinks served chilled to your liking.",
         singlePrice: "75"
+      },
+      {
+        id: "b22",
+        name: "Carlsberg Elephant Can",
+        category: "Premium Can",
+        type: "Extra Strong",
+        tag: "Powerful",
+        description: "Rich, malty extra strong Carlsberg Elephant in a cold can.",
+        singlePrice: "280"
       }
     ]
   },
@@ -213,7 +222,7 @@ export const RESTAURANT_MENU: MenuSection[] = [
         type: "Small",
         tag: "Classic",
         description: "Classic small cigarette.",
-        singlePrice: "20"
+        singlePrice: "25"
       },
       {
         id: "c2",
